@@ -79,6 +79,7 @@ class PIMPage(PimData,PimLocators):
 
         except (NoSuchElementException,TimeoutException) as error:
             print("Error:", error)
+            return False
 
     # validation for edit the existing employee information
     def edit_employee(self):
@@ -116,6 +117,7 @@ class PIMPage(PimData,PimLocators):
 
         except (NoSuchElementException,TimeoutException) as error:
             print("Error:",error)
+            return False
 
     # validation for delete the existing employee details
     def delete_employee(self):
@@ -145,3 +147,4 @@ class PIMPage(PimData,PimLocators):
 
         except (NoSuchElementException,TimeoutException) as error:
             print("Error:",error)
+            return False
