@@ -137,7 +137,7 @@ class PIMPage(PimData,PimLocators):
 
             wait.until(expected_conditions.presence_of_element_located((By.XPATH, "(//i[@class='oxd-icon bi-trash'])[1]"))).click()
 
-            wait.until(expected_conditions.presence_of_element_located((By.XPATH, "(//button[@type='button'])[9]"))).click()
+            wait.until(expected_conditions.presence_of_element_located((By.XPATH, "//button[text()=' Yes, Delete ']"))).click()
 
             success_text = wait.until(expected_conditions.visibility_of_element_located((By.ID, self.toast_message_locator))).text
             print(success_text)
